@@ -1,0 +1,37 @@
+{
+  "name": "life",
+  "version": "0.0.1",
+  "description": "Conway's Game of Life",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server -c-1", 
+    "test": "mocha",
+    "build": "browserify main.js -o public/bundle.js",
+    "watch": "watchify main.js -o public/bundle.js --debug --verbose"
+  },
+  "keywords": [
+    "Conway",
+    "game",
+    "of",
+    "life"
+  ],
+  "author": "Abhishek Pillai",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "mocha": "^3.2.0",
+    "watchify": "^3.9.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/abhipil/life.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhipil/life/issues"
+  },
+  "homepage": "https://github.com/abhipil/life#readme"
+}

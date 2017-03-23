@@ -1,0 +1,35 @@
+{
+  "name": "life",
+  "version": "0.1.0",
+  "description": "Yet another JS implementation of Conway's Game of Life",
+  "main": "./lib/life",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1 & watchify main.js -o public/bundle.js --debug --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhipil/life.git"
+  },
+  "keywords": [
+    "Conway",
+    "game",
+    "of",
+    "life",
+    "HTML5",
+    "canvas"
+  ],
+  "author": "Abhishek Pillai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhipil/life/issues"
+  },
+  "homepage": "https://github.com/abhipil/life#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "watchify": "^3.9.0"
+  }
+}
